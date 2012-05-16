@@ -1,0 +1,6 @@
+@mixin transform-style( $style: flat ) {
+	@each $prefix in -moz, -ms, -o, -webkit {
+		#{$prefix}-transform-style: $style;
+	}
+	transform-style: $style;
+}

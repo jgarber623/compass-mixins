@@ -1,0 +1,17 @@
+@mixin wallpaper( $background-image, $opacity, $pseudo-element:before ) {
+	> * {
+		position: relative;
+		z-index: 10;
+	}
+
+	&:#{$pseudo-element} {
+		background: image-url( $background-image ) repeat 0 0;
+		bottom: 0;
+		@include generated-content( auto, auto );
+		left: 0;
+		@include opacity( $opacity );
+		right: 0;
+		top: 0;
+		z-index: 1;
+	}
+}

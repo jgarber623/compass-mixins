@@ -1,0 +1,7 @@
+@mixin generated-content( $width: 0, $height: 0 ) {
+	content: "";
+	display: block;
+	height: $height;
+	position: absolute;
+	width: $width;
+}

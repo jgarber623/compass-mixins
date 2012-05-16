@@ -1,0 +1,6 @@
+@mixin perspective( $style: none ) {
+	@each $prefix in -moz, -ms, -o, -webkit {
+		#{$prefix}-perspective: $style;
+	}
+	perspective: $style;
+}

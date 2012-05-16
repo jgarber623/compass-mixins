@@ -1,0 +1,6 @@
+@mixin backface-visibility( $style: visible ) {
+	@each $prefix in -moz, -ms, -o, -webkit {
+		#{$prefix}-backface-visibility: $style;
+	}
+	backface-visibility: $style;
+}
