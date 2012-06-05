@@ -1,3 +1,5 @@
+// Relies on generated-content() and opacity() mixins
+
 @mixin wallpaper( $background-image, $opacity, $pseudo-element: before ) {
 	> * {
 		position: relative;
