@@ -1,5 +1,9 @@
 @mixin opacity( $opacity ) {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha( Opacity=#{round( $opacity * 100 )} )";
-	filter: alpha( opacity=#{round( $opacity * 100 )} );
+	@if $legacy-support-for-ie8 {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha( Opacity=#{round( $opacity * 100 )} )";
+	}
+	@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+		filter: alpha( opacity=#{round( $opacity * 100 )} );
+	}
 	opacity: $opacity;
 }
