@@ -1,4 +1,4 @@
-// Relies on Compass' font-url() method
+// Relies on Compass' font-url() helper
 
 @mixin font-face( $name, $filename, $svg_id, $style: normal, $weight: normal ) {
 	@font-face {
