@@ -1,0 +1,19 @@
+@mixin horizontal-centered-list( $container, $ul: ul, $li: li ) {
+	#{$container} {
+		overflow: hidden;
+	}
+	
+	#{$ul},
+	#{$li} {
+		float: left;
+		position: relative;
+	}
+	
+	#{$ul} {
+		left: 50%;
+	}
+	
+	#{$li} {
+		right: 50%;
+	}
+}
