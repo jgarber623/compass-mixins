@@ -1,4 +1,4 @@
-@mixin generated-content( $width: 0, $height: 0, $position: absolute, $display: block ) {
+@mixin generated-content($width: 0, $height: 0, $position: absolute, $display: block) {
 	content: "";
 	display: $display;
 	height: $height;

@@ -1,4 +1,4 @@
-@mixin position( $position: relative ) {
+@mixin position($position: relative) {
 	position: $position;
 	@if ( $position == "sticky" ) {
 		@each $prefix in moz, ms, o, webkit {

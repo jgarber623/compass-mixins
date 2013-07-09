@@ -1,4 +1,4 @@
-@mixin block( $width: 0, $height: 0 ) {
+@mixin block($width: 0, $height: 0) {
 	display: block;
 	height: $height;
 	width: $width;

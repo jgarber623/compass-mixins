@@ -1,13 +1,12 @@
 // Relies on Compass' font-url() helper
 
-@mixin font-face( $name, $filename, $style: normal, $weight: normal ) {
+@mixin font-face($name, $filename, $style: normal, $weight: normal) {
 	@font-face {
 		font-family: "#{$name}";
 		font-style: $style;
 		font-weight: $weight;
-		src: font-url( "#{$filename}.eot" );
-		src: font-url( "#{$filename}.eot?#iefix" ) format( "embedded-opentype" ),
-			 font-url( "#{$filename}.woff" ) format( "woff" ),
-			 font-url( "#{$filename}.ttf" ) format( "truetype" );
+		src: font-url("#{$filename}.eot");
+		src: font-url("#{$filename}.eot?#iefix") format("embedded-opentype"),
+			 font-url("#{$filename}.woff") format("woff");
 	}
 }
